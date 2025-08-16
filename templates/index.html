@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+  <form id="translate-form" class="card">
+    <label for="src" class="label">English text</label>
+    <textarea id="src" name="src" rows="6" placeholder="Type English here..." required>{{ src or "" }}</textarea>
+
+    <div class="row">
+      <button type="submit">Translate</button>
+      <div id="spinner" class="spinner" style="display:none;"></div>
+    </div>
+  </form>
+
+  <div id="result-container" class="card result" style="display:none;">
+    <div class="label">French translation</div>
+    <div id="output" class="output"></div>
+  </div>
+{% endblock %}

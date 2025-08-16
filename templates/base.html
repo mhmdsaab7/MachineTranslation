@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>{{ title or "Eng→Fr Translator" }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <header class="container">
+    <h1>English → French Translator</h1>
+  </header>
+
+  <main class="container">
+    {# Optional Flask flash messages from server-side flows #}
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for cat, msg in messages %}
+          <div class="flash {{ cat }}">{{ msg }}</div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    {% block content %}{% endblock %}
+  </main>
+
+{#  <footer class="container footer">#}
+{#    <small>Demo UI — Flask + Jinja</small>#}
+{#  </footer>#}
+
+  <script src="{{ url_for('static', filename='app.js') }}" defer></script>
+</body>
+</html>
