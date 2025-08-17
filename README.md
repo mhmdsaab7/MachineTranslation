@@ -8,6 +8,25 @@ pinned: false
 
 ---
 
+# 🇬🇧➡️🇫🇷 English to French Machine Translation  
+
+This project is a simple **Neural Machine Translation app** built with **TensorFlow + Flask**.  
+It takes an English sentence as input and returns its French translation.  
+
+The app is deployed on **Hugging Face Spaces** with a lightweight web interface.  
+https://huggingface.co/spaces/mhmdsaab/zaka-machine-translation
+
+---
+
+## Features  
+- Sequence-to-sequence GRU model trained on English–French pairs  
+- Flask backend API + HTML/CSS/JS interface  
+- Supports Docker for local deployment  
+- Responsive UI for easy testing  
+
+---
+
+
 ## 🛠️ Setup Instructions (Local with Docker)  
 
 1. Clone the repository:  
@@ -45,7 +64,7 @@ The French translation will appear instantly below.
 * Currently only supports English → French, not bidirectional translation.
 * Model used is not perfect and can be optimized specially by adding attention mechanism
 
---
+---
 ### App Screenshot
 
 ![Screenshot](images/readme_app_screenshot.png)
