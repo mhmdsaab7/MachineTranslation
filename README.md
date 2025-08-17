@@ -59,9 +59,8 @@ The French translation will appear instantly below.
 
 * Padding tokens may occasionally appear if sentence lengths exceed max_en/max_fr.
 
-* Works fine on CPU but is slower compared to GPU.
-
 * Currently only supports English → French, not bidirectional translation.
+
 * Model used is not perfect and can be optimized specially by adding attention mechanism
 
 ---
