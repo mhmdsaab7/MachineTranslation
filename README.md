@@ -24,7 +24,7 @@ pinned: false
     ```bash
    http://localhost:8080
 
----
+---- 
 ## Using the Interface
 
 Enter an English sentence in the text box.
