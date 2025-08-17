@@ -57,8 +57,6 @@ The French translation will appear instantly below.
 ## Known Issues / Limitations
 * The model vocabulary is limited to training data → may fail on rare/long sentences.
 
-* Padding tokens may occasionally appear if sentence lengths exceed max_en/max_fr.
-
 * Currently only supports English → French, not bidirectional translation.
 
 * Model used is not perfect and can be optimized specially by adding attention mechanism
