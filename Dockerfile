@@ -28,4 +28,4 @@ COPY . /app
 
 
 # Gunicorn will serve the Flask app
-CMD exec gunicorn --workers 2 --threads 4 --bind 0.0.0.0:$PORT app:app
+CMD ["gunicorn", "-w", "2", "-k", "gthread", "-b", "0.0.0.0:8080", "app:app"]
