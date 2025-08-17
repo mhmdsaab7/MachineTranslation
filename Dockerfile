@@ -28,4 +28,5 @@ COPY . /app
 
 
 # Gunicorn will serve the Flask app
-CMD ["gunicorn", "-w", "2", "-k", "gthread", "-b", "0.0.0.0:8080", "app:app"]
+EXPOSE 7860
+CMD ["gunicorn", "-w", "2", "-k", "gthread", "-b", "0.0.0.0:7860", "app:app"]
