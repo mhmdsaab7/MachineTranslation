@@ -12,7 +12,7 @@ pinned: false
 
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/your-username/MachineTranslation.git
+   git clone https://github.com/mhmdsaab7/MachineTranslation.git
    cd MachineTranslation
 2. Build the Docker image:
     ```bash
